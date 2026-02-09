@@ -26,5 +26,3 @@ Questions:
     4. Now users should be able to add friends. Implement the `User.add_friend()` method to allow users to add friends.
     5. Now modify the methods involved in rendering the feed to also show when user's added each other as friends.
 """
-
-/in/diegotmorais
