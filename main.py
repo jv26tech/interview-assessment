@@ -5,7 +5,6 @@ from models import User, Payment
 
 class MiniVenmo:
     def create_user(self, username, balance, credit_card_number):
-        # TODO: add code here
         if username is None:
             raise UsernameException("Must have a username to make a payment.")
         elif not isinstance(username, str):
@@ -25,7 +24,6 @@ class MiniVenmo:
     def render_feed(self, feed):
         # Bobby paid Carol $5.00 for Coffee
         # Carol paid Bobby $15.00 for Lunch
-        # TODO: add code here
         if feed is not None:
             for line in feed:
                 print(line)

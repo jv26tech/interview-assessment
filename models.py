@@ -26,11 +26,9 @@ class User:
             raise UsernameException('Username not valid.')
 
     def retrieve_activity(self):
-        # TODO: add code here
         return self.feed
 
     def add_friend(self, new_friend):
-        # TODO: add code here
         if new_friend in self.friends:
             raise FriendshipException('Friendship already exists.')
         elif new_friend == self:
@@ -58,7 +56,6 @@ class User:
             raise CreditCardException('Invalid credit card number.')
 
     def pay(self, target, amount, note):
-        # TODO: add logic to pay with card or balance
         if not isinstance(amount, float):
             raise PaymentException('Amount must be a float.')
         elif target == self:
@@ -93,7 +90,6 @@ class User:
         return payment
 
     def pay_with_balance(self, target, amount, note):
-        # TODO: add code here
         amount = float(amount)
 
         if self.username == target.username:
