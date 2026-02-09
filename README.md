@@ -1,2 +1,2 @@
-# interview-assessment
-Project for interview challenge
+# Interview assessment challenge
+Project for the interview challenge
